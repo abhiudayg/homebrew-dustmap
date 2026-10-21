@@ -1,27 +1,23 @@
 cask "dustmap" do
-  version "0.1.0"
-  sha256 "9876f4c2e32f1a97d1ca0db83868ec763211b0813c2404d06d2aa18107f7ae14"
+  version "1.0.0"
+  sha256 "2333df2c01b020e3cf98b66ea4319788f660956d2d0333ecb774d16756ec4146"
 
   url "https://github.com/abhiudayg/dustmap/releases/download/v#{version}/DustMap_#{version}_aarch64.dmg"
   name "DustMap"
-  desc "Blazing-fast, transparent disk space analyzer and cleaner for macOS"
+  desc "Storage analyzer and safe, reversible cleaner for macOS"
   homepage "https://github.com/abhiudayg/dustmap"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
-  auto_updates false
   depends_on macos: ">= :ventura"
 
   app "DustMap.app"
 
   zap trash: [
-    "~/.dustmap",
-    "~/Library/Application Support/com.dustmap.desktop",
-    "~/Library/Caches/com.dustmap.desktop",
-    "~/Library/Preferences/com.dustmap.desktop.plist",
-    "~/Library/Saved Application State/com.dustmap.desktop.savedState",
+    "~/Library/Application Support/com.dustmap.desktop/settings.json",
+    "~/Library/Application Support/com.dustmap.desktop/audit.jsonl",
+    "~/Library/Application Support/com.dustmap.desktop/journal",
+    "~/Library/Application Support/com.dustmap.desktop/scan-cache",
+    "~/Library/Application Support/com.dustmap.desktop/storage-history",
+    "~/Library/Application Support/com.dustmap.desktop/rules-cache",
+    "~/Library/Logs/com.dustmap.desktop",
   ]
 end
