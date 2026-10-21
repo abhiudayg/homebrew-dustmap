@@ -1,13 +1,13 @@
 class Dustmap < Formula
   desc "Free, open-source macOS disk space analyzer and safe Mac storage cleaner (CLI)"
   homepage "https://github.com/abhiudayg/dustmap"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/abhiudayg/dustmap/releases/download/v1.0.0/dustmap-darwin-arm64"
-      sha256 "c9dd11ebb5e47405c26d9a604dcf81a5ca2369567f603ad09c11cf1e7fa9c3c4"
+      url "https://github.com/abhiudayg/dustmap/releases/download/v1.0.1/dustmap-darwin-arm64"
+      sha256 "bf4dc9d824e252b1abd2ad79f14c351fa4d5ec4c482f9887efb3a2e0cd6ff754"
     end
   end
 
