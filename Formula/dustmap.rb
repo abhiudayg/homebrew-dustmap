@@ -7,7 +7,7 @@ class Dustmap < Formula
   on_macos do
     on_arm do
       url "https://github.com/abhiudayg/dustmap/releases/download/v1.0.0/dustmap-darwin-arm64"
-      sha256 "e987d3024279dc359120b7b8e61cdb5d832657a3481f7a6fcf17195ff636e8a9"
+      sha256 "c9dd11ebb5e47405c26d9a604dcf81a5ca2369567f603ad09c11cf1e7fa9c3c4"
     end
   end
 

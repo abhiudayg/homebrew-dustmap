@@ -1,6 +1,6 @@
 cask "dustmap" do
   version "1.0.0"
-  sha256 "2333df2c01b020e3cf98b66ea4319788f660956d2d0333ecb774d16756ec4146"
+  sha256 "13fb33c89a1e73503fa718b929711210277eb9e9728fd7133494c7108ea4239c"
 
   url "https://github.com/abhiudayg/dustmap/releases/download/v#{version}/DustMap_#{version}_aarch64.dmg"
   name "DustMap"
